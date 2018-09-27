@@ -1,0 +1,12 @@
+# todo поправить в соответсвии с названием проекта
+spring:
+  application:
+    name: task-frontend-service
+server:
+  port: ${APP_PORT:80}
+management:
+  security:
+    enabled: false
+  info:
+    git:
+      mode: full

@@ -1,0 +1,19 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.main-block {
+  width: auto;
+}
+
+.col-sm-4 {
+  width: auto;
+  margin: 5px 0 0 5px;
+}
+
+.col-sm-8 {
+  width: auto;
+}

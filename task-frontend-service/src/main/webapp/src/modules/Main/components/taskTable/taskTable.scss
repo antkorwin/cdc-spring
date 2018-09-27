@@ -1,0 +1,134 @@
+$black: #000;
+$border: 1px solid $black;
+$box-shadow: -3px -3px 10px -3px rgb(128, 124, 124);
+
+.row-wrap {
+  width: 100%;
+  border-top: $border;
+
+  &--new-task {
+    background: rgb(192, 231, 182);
+  }
+
+  &--new-subtask {
+    background: rgb(235, 235, 235);
+  }
+}
+
+.title-block {
+  min-width: 150px;
+  height: 40px;
+  padding: 0 10px 0 20px;
+  box-sizing: border-box;
+
+  &--task {
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.estimate-block {
+  text-align: center;
+  vertical-align: center;
+
+  &--task {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+  }
+}
+
+.button-block {
+  height: 30px;
+}
+
+.button-add {
+  width: 30px;
+  color: rgb(80, 56, 146);
+  font-weight: bold;
+}
+
+.input-title {
+  position: relative;
+  right: 15px;
+  max-width: calc(100% - 30px);
+  padding: 4px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.input-evaluation {
+  position: relative;
+  right: 30px;
+  max-width: 60px;
+  margin-left: 30px;
+  padding: 4px;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.task-button {
+  width: 100%;
+  background: #b2d320;
+  cursor: pointer;
+}
+
+.button-send {
+  margin-right: 12px;
+  color: rgb(15, 190, 88);
+  font-size: 27px;
+}
+
+.button-close {
+  margin: 0 10px;
+  color: rgb(235, 10, 10);
+  font-size: 27px;
+}
+
+.task-block {
+  width: 100%;
+}
+
+.emoji-block {
+  width: 40px;
+  color: #3b131a;
+  font-size: 30px;
+}
+
+.button-add-task {
+  margin-right: 0;
+}
+
+.add-task {
+  margin-left: 13px;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+.btn-lg {
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.form-title-subtask {
+  margin-bottom: 10px;
+}
+
+.new-task {
+  margin-top: 5px !important;
+}
+
+.table-tasks {
+  margin-top: 5px !important;
+  margin-bottom: 0 !important;
+}

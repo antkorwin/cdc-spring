@@ -1,0 +1,57 @@
+{
+    "extends": "eslint:recommended",
+    "env": {
+      "es6": true,
+      "browser": true,
+      "jasmine": true,
+      "commonjs": true,
+      "node": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+      },
+      "sourceType": "module"
+    },
+    "globals": {
+      "module": true,
+      "inject": true,
+      "$": true
+    },
+    "rules": {
+      "no-unused-vars": 0,
+      "curly": 2,
+      "default-case": 2,
+      "eqeqeq": 2,
+      "no-loop-func": 1,
+      "no-magic-numbers": [
+        1,
+        {
+          "ignore": [
+            -1,
+            0,
+            1
+          ]
+        }
+      ],
+      "no-throw-literal": 1,
+      "radix": 2,
+      "quotes": [
+        2,
+        "single"
+      ],
+      "brace-style": [
+        1,
+        "stroustrup"
+      ],
+      "no-var": 2,
+      "prefer-arrow-callback": 2,
+      "semi": 2,
+      "no-extra-boolean-cast": 0
+    }
+  }
