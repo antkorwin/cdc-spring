@@ -22,10 +22,10 @@ public class MetricsServiceImpl implements MetricsService {
     @Override
     public List<Value> evaluate(List<Task> tasks) {
 
-        return Arrays.asList(evaluateMetricsInRange(tasks, 0, 10, "easy"),
-                             evaluateMetricsInRange(tasks, 11, 20, "cool"),
-                             evaluateMetricsInRange(tasks, 21, 40, "hard"),
-                             evaluateMetricsInRange(tasks, 41, 1000, "unicorn"));
+        return Arrays.asList(evaluateMetricsInRange(tasks, 0, 10, "easy 🙂"),
+                             evaluateMetricsInRange(tasks, 11, 20, "cool 👍"),
+                             evaluateMetricsInRange(tasks, 21, 40, "hard 💪"),
+                             evaluateMetricsInRange(tasks, 41, 1000, "unicorn 🦄"));
     }
 
     private Value evaluateMetricsInRange(List<Task> tasks, int from, int to, String prefix) {
