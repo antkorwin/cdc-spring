@@ -41,6 +41,6 @@ class TaskServiceFeignIT {
         // Assert
         assertThat(tasks).isNotNull()
                          .extracting(Task::getEstimate)
-                         .contains(20, 7, 100);
+                         .contains(20, 17, 100);
     }
 }
