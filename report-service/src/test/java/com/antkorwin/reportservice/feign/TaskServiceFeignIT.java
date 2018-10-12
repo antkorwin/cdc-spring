@@ -23,11 +23,6 @@ import static org.assertj.core.api.Assertions.assertThat;
  *
  * @author Korovin Anatoliy
  */
-//@ExtendWith(SpringExtension.class)
-//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
-//@AutoConfigureStubRunner(ids = {"com.antkorwin:task-service:+:stubs"},
-//                         stubsMode = StubRunnerProperties.StubsMode.LOCAL)
-
 @EnableIntegrationTests
 @AutoConfigureStubRunner(ids = {"com.antkorwin:task-service:+:stubs"},
                          stubsMode = StubRunnerProperties.StubsMode.REMOTE,

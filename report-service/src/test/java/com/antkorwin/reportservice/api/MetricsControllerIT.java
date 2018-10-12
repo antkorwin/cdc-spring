@@ -27,12 +27,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @EnableIntegrationTests
 @EnableRestTests
-//@AutoConfigureStubRunner(ids = {"com.antkorwin:task-service:+:stubs"},
-//                         stubsMode = StubRunnerProperties.StubsMode.LOCAL)
 @AutoConfigureStubRunner(ids = {"com.antkorwin:task-service:+:stubs"},
                          stubsMode = StubRunnerProperties.StubsMode.REMOTE,
                          snapshotCheckSkip = true,
-                         repositoryRoot = "http://127.0.0.1:8081/artifactory/libs-snapshot-local")
+                         repositoryRoot = "http://192.168.0.8:8081/artifactory/libs-snapshot-local")
 class MetricsControllerIT {
 
     @Autowired
