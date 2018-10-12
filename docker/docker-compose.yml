@@ -1,0 +1,33 @@
+version: '3'
+services:
+  teamcity-server-instance:
+    image: jetbrains/teamcity-server    
+    ports:
+     - "127.0.0.1:8111:8111"    
+    #restart: always
+    volumes:
+      - ./test/teamcity/data:/data/teamcity_server/datadir
+      - ./test/teamcity/logs:/opt/teamcity/logs
+    networks:
+      - teamcity-network
+ 
+  teamcity-agent-instance:
+    image: jetbrains/teamcity-agent
+    #restart: always    
+    volumes:
+      - ./test/teamcity/agent-conf:/data/teamcity_agent/conf
+    environment:
+      - SERVER_URL=teamcity-server-instance:8111
+    networks:
+      - teamcity-network
+
+  artifactory-instance:
+    image: docker.bintray.io/jfrog/artifactory-oss:latest    
+    ports: 
+      - "127.0.0.1:8081:8081"
+    #restart: always
+    networks: 
+      - teamcity-network
+ 
+networks:
+  teamcity-network:    
