@@ -50,9 +50,9 @@ class MetricsControllerIT {
         // Assert
         assertThat(values).isNotNull()
                           .extracting(Value::getName, Value::getValue)
-                          .contains(Tuple.tuple("0..10 - easy", (double) 100 / 3),
-                                    Tuple.tuple("11..20 - cool", (double) 100 / 3),
-                                    Tuple.tuple("21..40 - hard", (double) 0),
-                                    Tuple.tuple("41..1000 - unicorn", (double) 100 / 3));
+                          .contains(Tuple.tuple("0..10 - easy 🙂", (double) 100 / 3),
+                                    Tuple.tuple("11..20 - cool 👍", (double) 100 / 3),
+                                    Tuple.tuple("21..40 - hard 💪", (double) 0),
+                                    Tuple.tuple("41..1000 - unicorn 🦄", (double) 100 / 3));
     }
 }
