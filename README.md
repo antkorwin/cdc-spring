@@ -4,6 +4,8 @@ This is a project to demonstrate how to work with Spring Cloud Contract and JUni
 
 You can read about this in more details in my article: http://antkorwin.com/cloud/spring_cloud_contract_junit5.html
 
+![diagram](http://antkorwin.com/cloud/diagram_cdc.png)
+
 The brief description of microservices:
 - `task-service` - API provider microservice
 - `report-service` - consumer service example
